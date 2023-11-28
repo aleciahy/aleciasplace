@@ -1,0 +1,217 @@
+@charset "utf-8";
+/*
+   Filename: layout1
+
+   Alecia Humphrey
+   Fall 2023
+
+*/
+/* =============================================
+	Base layout styles used by mobile devices
+	up to 480px and cascaded to larger devices 
+	unless superceded by other styles.
+   =============================================
+*/
+
+/*html sytles*/
+
+html {
+	height: 100%;
+	background-color: rgba(146,168,209,1.00);
+}
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/*header styles*/
+
+header {
+	margin: 0px;
+	width: 100%;
+}
+
+header img {
+	width: 100%;
+}
+
+ /* navbar styles*/
+ 
+.bg-img {
+
+  background-image: "images/candlespg1.jpg";
+
+  min-height: 380px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* container styles */
+
+.container {
+  position: relative;
+  text-align: left;
+  color: rgb(0,0,102);
+}
+
+.top-left {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
+
+/*body styles*/
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	width: 81.9%;
+	padding-left: 4.55%;
+	padding-right: 4.55%;
+	clear: none;
+	float: none;
+	min-height: 100%;
+}
+
+/*media button styles*/
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50x;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+/*footer styles*/
+
+footer {
+	width: 100%;
+	clear: left;
+	text-align: center;
+	font-size: 0.45em;
+	margin-top: 30px;
+	border-top: 4px solid rgba(76,26,52, 1.0);
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
+}
+
+
+/* =============================================
+	Tablet layout styles used by devices
+	481px to 768px and cascaded to larger 
+	devices.
+   =============================================
+*/
+
+@media only screen and (min-width: 481px) {
+body {
+	width: 91.14%;
+	padding-left: 0.93%;
+	padding-right: 0.93%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+nav div {
+	float: left;
+	width: 33.3%
+}
+
+footer {
+	font-size: 1.2em;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  font-size: 2.2em;
+  padding: 1em;
+}
+}
+
+
+/* =============================================
+	Desktop layout styles used by  devices
+	769px and larger.
+   =============================================
+*/
+
+@media only screen and (min-width: 769px) {
+html {
+	background-color: rgba(76,26,52, 1.0);
+	margin: 0px auto;
+}
+body {
+	width: 88.2%;
+	max-width: 800px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+	background-color: HoneyDew;
+	-moz-box-shadow: rgba(204, 102, 153, 0.9) 20px 0px 25px,  rgba(204, 102, 153, 0.9) -20px 0px 25px;
+	-webkit-box-shadow: rgba(204, 102, 153, 0.9) 20px 0px 25px,  rgba(204, 102, 153, 0.9) -20px 0px 25px;
+	box-shadow: rgba(233, 226, 230, 1.0) 10px 0px 15px,  rgba(233, 226, 230, 1.0) -10px 0px 15px
+}
+footer {
+	font-size: 1.2em;
+}
+
+}
+
